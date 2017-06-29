@@ -16,6 +16,8 @@ struct Uther {
         static let userDictionary = "user_dictionary"
     }
     
+//    fileprivate let nums = [0.0,0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8,0.9,1.0]
+    
     fileprivate static var dictionary: [String:String]?
     
     static func handleMessage(_ text:String, completion:@escaping (EventType)->()) {
@@ -48,7 +50,8 @@ struct Uther {
                 if let p = p {
                     completion(.emoji(p))
                 } else {
-                    completion(.error)
+                    let r = Double(arc4random() % 10) * 0.1
+                    completion(.emoji(r))
                 }
             }
         } else {
@@ -56,7 +59,8 @@ struct Uther {
                 if let p = p {
                     completion(.emoji(p))
                 } else {
-                    completion(.error)
+                    let r = Double(arc4random() % 10) * 0.1
+                    completion(.emoji(r))
                 }
             }
         }

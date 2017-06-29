@@ -17,7 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         
         let keys = UtherKeys()
-        Bugly.start(withAppId: keys.buglyKey)
+        Bugly.start(withAppId: keys.kEY)
         DB.setupDatabase()
         return true
     }
