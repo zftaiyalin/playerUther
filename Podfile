@@ -15,6 +15,14 @@ target 'Uther' do
     pod 'LTMorphingLabel'
     pod 'Moya'
     pod 'Bugly'
+    pod 'Reachability'
+    pod 'YYCategories'
+    pod 'YYModel'
+    pod 'UMengAnalytics'
+    pod 'SnapKit'
+    pod 'SVProgressHUD'
+    pod 'Firebase/Core'
+    pod 'Firebase/AdMob'
 end
 
 post_install do |installer|

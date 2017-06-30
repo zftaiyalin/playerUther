@@ -3,6 +3,24 @@ PODS:
   - AsyncSwift (2.0.1)
   - Bugly (2.4.6)
   - CryptoSwift (0.6.7)
+  - Firebase/AdMob (4.0.0):
+    - Firebase/Core
+    - Google-Mobile-Ads-SDK (= 7.20.0)
+  - Firebase/Core (4.0.0):
+    - FirebaseAnalytics (= 4.0.0)
+    - FirebaseCore (= 4.0.0)
+  - FirebaseAnalytics (4.0.0):
+    - FirebaseCore (~> 4.0)
+    - FirebaseInstanceID (~> 2.0)
+    - GoogleToolboxForMac/NSData+zlib (~> 2.1)
+  - FirebaseCore (4.0.0):
+    - GoogleToolboxForMac/NSData+zlib (~> 2.1)
+  - FirebaseInstanceID (2.0.0):
+    - FirebaseCore (~> 4.0)
+  - Google-Mobile-Ads-SDK (7.20.0)
+  - GoogleToolboxForMac/Defines (2.1.1)
+  - GoogleToolboxForMac/NSData+zlib (2.1.1):
+    - GoogleToolboxForMac/Defines (= 2.1.1)
   - JSQMessagesViewController (7.3.4):
     - JSQSystemSoundPlayer (~> 2.0.1)
   - JSQSystemSoundPlayer (2.0.1)
@@ -14,32 +32,48 @@ PODS:
   - Moya/Core (8.0.0):
     - Alamofire (~> 4.2.0)
     - Result (~> 3.1.0)
+  - Reachability (3.2)
   - Result (3.1.0)
+  - SnapKit (3.2.0)
   - SQLite.swift (0.11.2):
     - SQLite.swift/standard (= 0.11.2)
   - SQLite.swift/standard (0.11.2)
+  - SVProgressHUD (2.1.2)
   - SwiftDate (4.0.11)
   - SwiftHEXColors (1.1.0)
   - SwiftyJSON (3.1.4)
+  - UMengAnalytics (4.2.4)
   - XCGLogger (4.0.0):
     - XCGLogger/Core (= 4.0.0)
   - XCGLogger/Core (4.0.0)
+  - YYCategories (1.0.4):
+    - YYCategories/no-arc (= 1.0.4)
+  - YYCategories/no-arc (1.0.4)
+  - YYModel (1.0.4)
 
 DEPENDENCIES:
   - Alamofire
   - AsyncSwift
   - Bugly
   - CryptoSwift
+  - Firebase/AdMob
+  - Firebase/Core
   - JSQMessagesViewController
   - KeyboardMan
   - Keys (from `Pods/CocoaPodsKeys`)
   - LTMorphingLabel
   - Moya
+  - Reachability
+  - SnapKit
   - SQLite.swift
+  - SVProgressHUD
   - SwiftDate
   - SwiftHEXColors
   - SwiftyJSON
+  - UMengAnalytics
   - XCGLogger
+  - YYCategories
+  - YYModel
 
 EXTERNAL SOURCES:
   Keys:
@@ -50,19 +84,31 @@ SPEC CHECKSUMS:
   AsyncSwift: 632138e42ead868b53c745fcde9bf733ce1527ad
   Bugly: 7756e72c59387b0d490f46e83ab458ae94ee7fba
   CryptoSwift: 685ae257941e5447474348a2b545583e1a16b573
+  Firebase: 284eea779b73fdff309791817da7c68bff8dd572
+  FirebaseAnalytics: 6f08e746f7d66f5452931bc2e822b5df9c66b64a
+  FirebaseCore: 85ad466044c2f013cdb167f85d426d15b128114a
+  FirebaseInstanceID: 9fbf536668f4d3f0880e7438456dabd1376e294b
+  Google-Mobile-Ads-SDK: 168312cdc167fa22746d4ea8e839fc4825dd2966
+  GoogleToolboxForMac: 8e329f1b599f2512c6b10676d45736bcc2cbbeb0
   JSQMessagesViewController: 39fed975e3c9f8eba7292071e29eeb541d105e66
   JSQSystemSoundPlayer: c5850e77a4363ffd374cd851154b9af93264ed8d
   KeyboardMan: 51d9e93890be5493c3c4837299d20557d7572ab4
   Keys: 9c35bf00f612ee1d48556f4a4b9b4551e224e90f
   LTMorphingLabel: d9a85f16ac306f0e07321d6819964deb2dc69638
   Moya: 850a166ab8241bd1c1cea6dbe012e3a2ad62944a
+  Reachability: 33e18b67625424e47b6cde6d202dce689ad7af96
   Result: 4e3ed5995ed94d0cd6a09be9a431fce3f3624bbf
+  SnapKit: 1ca44df72cfa543218d177cb8aab029d10d86ea7
   SQLite.swift: 670c3e9e0a806bbfd56a3de5d530768dc0e6fe7c
+  SVProgressHUD: c404a55d78acbeb7ebb78b76d3faf986475a6994
   SwiftDate: a36d5ce7c86bed3ed92b583ccbf15045f374ac65
   SwiftHEXColors: 8f7e364df7929e32cff9f9eeb044bb215167d6be
   SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
+  UMengAnalytics: ef8d45f94c0e5771dc364cf6a5731d9d3b101da2
   XCGLogger: 38063ea89b4c8b23232d18efd2e12eb0005f3ea4
+  YYCategories: 6bcd4314c6661a561410dce4a793379ebd306abd
+  YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
 
-PODFILE CHECKSUM: 8dc6c377b2e773283e5936a1279a60fb77691d83
+PODFILE CHECKSUM: a02a01793c8ff1767af577ee1024e51347e1e277
 
 COCOAPODS: 1.2.0
